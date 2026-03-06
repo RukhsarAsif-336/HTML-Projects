@@ -1,0 +1,97 @@
+nav ul {
+    list-style: none;      /* remove bullets */
+    display: flex;         /* flex container for horizontal layout */
+    gap: 20px;             /* space between items */
+    padding: 0;            /* remove default padding */
+    margin: 0;             /* remove default margin */
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none; /* remove underline */
+    color: #a71888;        /* your desired color */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* simple hover effect */
+    font-family: Verdana, sans-serif;
+}
+
+
+
+/* Flex container */
+.flex-container {
+  display: flex;       /* enable Flexbox */
+  flex-wrap: wrap;     /* allow multiple rows */
+}
+
+/* Flex items / boxes */
+.flex-box {
+  flex: 1 1 50%;       /* each box takes 50% of the row */
+  border: 1px solid #000; /* simple border to see boxes */
+  box-sizing: border-box;  /* include border in width */
+  padding: 20px;
+  text-align: center;
+}
+
+.flex-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.flex-box p {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.flex-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3730a3;
+}
+
+  /* Invite Users section container */
+.invite-users {
+    background-color: #e0f2fe;       /* light blue background */
+    padding: 50px 20px;              /* generous padding */
+    text-align: center;
+    border-radius: 12px;             /* rounded corners */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* subtle shadow */
+    margin-top: 60px;                /* spacing from content above */
+}
+
+/* Heading for the section */
+.invite-users h2 {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #1e40af;                  /* darker blue */
+    font-size: 2rem;
+}
+
+/* Description text */
+.invite-users p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #1e3a8a;
+}
+
+.invite-users .invite-form {
+    display: flex;        /* makes the form a Flex container */
+    justify-content: center;  /* centers child items horizontally */
+    flex-wrap: wrap;      /* allows child items (input + button) to wrap to next line if needed */
+}

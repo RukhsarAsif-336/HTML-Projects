@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Exotic Escapes</title>
+    <link rel="stylesheet" href="Challenge2.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Your Next Travel Adventure</h1>
+            <p>Choose your dream travel destination for 2026.</p>
+        </header>
+
+           <!-- ✅ Navigation -->
+  <nav>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<body>
+  <main class="layout">
+    <section class="content">
+      <p class="hero-text">Choose your dream travel destination for 2026</p>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul class="sidebar-links">
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Travel Tips</a></li>
+        <li><a href="#">2026 Deals</a></li>
+      </ul>
+    </aside>
+  </main>
+
+
+         <!-- ✅ Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Exotic Escapes. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="About">About</a></li>
+      <li><a href="Destinations">Destinations</a></li>
+      <li><a href="Contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/page/exoticescapes"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/exoticescapes"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.twitter.com/exoticescapes"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Wonderful World of Disney</title>
+     <link rel="stylesheet" href="Challenge3.css">
+     </head>
+     <body>
+
+        <header>
+            <h1>Step Into the Magic</h1>
+            <p>"Step into a world where dreams come alive, where every castle hides a story, and every adventure sparks the imagination. Your magical journey begins here."</p>
+        </header>
+
+<div class="banner-js">
+  <img src="Parade2.jpg" id="banner-image" alt="Disney Parade">
+</div>
+
+<script>
+const slides = [
+  'Parade2.jpg',
+  'Parade3.jpg',
+  'Parade4.jpg'
+]
+
+let currentIndex = 0;
+const bannerImage = document.getElementById('banner-image');
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  bannerImage.src = slides[currentIndex];
+}, 5000); // changes every 5 seconds
+</script>
+
+
+
+           <!-- ✅ Navigation -->
+ <nav>
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="tours.html">Tours</a></li> <!-- If you have a Tours page -->
+        <a href="Challenge4.html">Contact</a>
+
+    </ul>
+</nav>
+
+
+
+    <main class="layout">
+        <section class="content">
+            <p class="hero-text">Choose your next Disney adventure and discover the destinations where fairy tales become reality — from the classic magic of Disneyland to the wonders of Disney World.</p>
+            <img src="Disneyland.jpg" alt="Disneyland" style="width:50%; height:auto;">
+
+<section class="hero">
+  <h1>Welcome to Disneyland</h1>
+   <img src="Disneyprincess.jpg" alt="Disneyprincess" style="width:50%; height:auto;">
+</section>
+
+<section class="adventure">
+  <h2>Magical Adventures</h2>
+   <img src="Mickeyminnie.jpg" alt="Mickieminnie" style="width:50%; height:auto;">
+</section>
+
+<section class="parades">
+  <h2>Exciting Parades</h2>
+   <img src="Parade.jpg" alt="Parade" style="width:50%; height:auto;">
+</section>
