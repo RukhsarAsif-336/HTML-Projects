@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowhaven Candles</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Candle hover effect using overlay */
+    .candle-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    .candle-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      object-fit: cover;
+    }
+
+    .candle-container:hover .candle-overlay {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    .candle-container img.main-image {
+      transition: transform 0.5s ease;
+    }
+
+    .candle-container:hover img.main-image {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container d-flex justify-content-center">
+ <h1 class="display 4">Glowhaven</h1>
+
+</div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="text-center py-5 bg-light">
+    <h1 class="display-2">Welcome to Glowhaven Candles</h1>
+    <p class="lead">Hand-poured candles crafted to bring warmth, elegance, and tranquility to your home.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="py-5 bg-light text-center">
+    <h2 class="mb-4">About Us</h2>
+    <p class="lead">
+      At Glowhaven Candles, we handcraft each candle with natural waxes and pure essential oils. 
+      Our mission is to fill your home with warmth, soothing scents, and a touch of elegance, 
+      making every moment special and inviting.
+      <a href="#" class="btn btn-primary btn-lg mt-3">Read More</a>
+    </p>
+  </section>
+
+  <!-- Candle Product Grid -->
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="candle-container shadow">
+          <img src="images/Candle1.jpg" alt="Candle 1" class="img-fluid main-image">
+          <img src="images/Candle1-glow.jpg" alt="Candle 1 Glow" class="img-fluid candle-overlay">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="candle-container shadow">
+          <img src="images/Candle2.jpg" alt="Candle 2" class="img-fluid main-image">
+          <img src="images/Candle2-glow.jpg" alt="Candle 2 Glow" class="img-fluid candle-overlay">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="candle-container shadow">
+          <img src="images/Candle3.jpg" alt="Candle 3" class="img-fluid main-image">
+          <img src="images/Candle3-glow.jpg" alt="Candle 3 Glow" class="img-fluid candle-overlay">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="py-5 bg-light text-center">
+    <h2 class="mb-4">What Our Customers Say</h2>
+    <div class="container">
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <p class="card-text">
+                "The candles are stunning and smell amazing! Check out Glowhaven."
+              </p>
+              <h5 class="card-title mt-3">— Sarah L.</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <p class="card-text">
+                "Glowhaven has the most aesthetic candles for your home. Excellent customer service!"
+              </p>
+              <h5 class="card-title mt-3">— James P.</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <p class="card-text">
+                "They helped me find the perfect candle for my needs. Truly high-quality candles!"
+              </p>
+              <h5 class="card-title mt-3">— Maria K.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2026 Glowhaven Candles. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional subtle JS for candle hover brightness -->
+  <script>
+    const candles = document.querySelectorAll('.candle-container');
+    candles.forEach(container => {
+      const mainImage = container.querySelector('.main-image');
+      container.addEventListener('mouseenter', () => {
+        mainImage.style.filter = 'brightness(1.1)';
+      });
+      container.addEventListener('mouseleave', () => {
+        mainImage.style.filter = 'brightness(1)';
+      });
+    });
+  </script>
+
+</body>
+</html>

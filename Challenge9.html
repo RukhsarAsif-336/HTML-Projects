@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate Map Page</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col">
+
+  <!-- ========================================================= -->
+  <!-- TOP NAVIGATION BAR -->
+  <!-- ========================================================= -->
+  <header class="bg-gray-700 text-white px-8 py-4 flex justify-between items-center shadow">
+
+    <!-- Left nav: Logo + links -->
+    <div class="flex items-center space-x-10">
+      <div class="text-xl font-bold bg-gray-500 px-5 py-1 rounded-full">LOGO</div>
+
+      <nav class="hidden md:flex space-x-8 text-sm tracking-wide">
+        <a href="#" class="hover:underline">SEARCH FOR HOMES</a>
+        <a href="#" class="hover:underline">AGENTS & OFFICES</a>
+        <a href="#" class="hover:underline">LOCAL INFORMATION</a>
+      </nav>
+    </div>
+
+    <!-- Right nav -->
+    <div class="flex items-center space-x-4 text-sm tracking-wide">
+      <span class="hidden md:inline">LANGUAGE: ENGLISH</span>
+      <a href="#" class="hover:underline hidden md:inline">BUYING / SELLING YOUR HOME</a>
+      <a href="#" class="hover:underline hidden md:inline">ABOUT US</a>
+      <div class="w-6 h-6 rounded-full bg-gray-500"></div>
+      <span>ACCOUNT</span>
+    </div>
+
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- SEARCH / FILTER BAR -->
+  <!-- ========================================================= -->
+  <section class="bg-white border-b px-8 py-6 flex flex-wrap items-end gap-x-8 gap-y-6">
+
+    <!-- Location -->
+    <div class="flex flex-col">
+      <label class="uppercase text-xs tracking-widest mb-1">Search</label>
+      <input type="text" placeholder="Location"
+             class="border px-4 py-2 rounded-md w-44">
+    </div>
+
+    <!-- Price Min -->
+    <div class="flex flex-col">
+      <label class="uppercase text-xs tracking-widest mb-1">Price</label>
+      <input type="text" placeholder="Min"
+             class="border px-4 py-2 rounded-md w-28">
+    </div>
+
+    <!-- Price Max -->
+    <div class="flex flex-col">
+      <label class="opacity-0 text-xs mb-1">.</label>
+      <input type="text" placeholder="Max"
+             class="border px-4 py-2 rounded-md w-28">
+    </div>
+
+    <!-- Beds -->
+    <div class="flex flex-col">
+      <label class="uppercase text-xs tracking-widest mb-1">Beds</label>
+      <input type="text" placeholder="Avg."
+             class="border px-4 py-2 rounded-md w-24">
+    </div>
+
+    <!-- Baths -->
+    <div class="flex flex-col">
+      <label class="uppercase text-xs tracking-widest mb-1">Baths</label>
+      <input type="text" placeholder="Avg."
+             class="border px-4 py-2 rounded-md w-24">
+    </div>
+
+    <!-- Update button -->
+    <button class="bg-gray-700 text-white px-6 py-2 rounded-md h-10">UPDATE</button>
+
+    <!-- Advanced search -->
+    <a href="#" class="text-sm underline ml-2">ADVANCED SEARCH</a>
+
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- MAIN LAYOUT: LISTINGS + MAP -->
+  <!-- ========================================================= -->
+  <div class="flex flex-grow overflow-hidden">
+
+    <!-- LEFT COLUMN: PROPERTY LISTINGS -->
+    <aside class="w-full md:w-1/3 bg-gray-50 overflow-y-auto p-6 space-y-6">
+
+      <!-- PROPERTY CARD TEMPLATE (repeat as needed) -->
+      <div class="border border-gray-300 bg-white rounded-lg shadow-sm p-4 flex space-x-4">
+        <div class="w-28 h-28 bg-gray-300 rounded-md flex items-center justify-center">
+          IMG
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-semibold text-lg">Spacious Cottage for Sale</h3>
+          <p class="font-bold text-gray-700">£ 2 300 000</p>
+          <p class="text-sm text-gray-600 mt-2">
+            This lovely property is nested between the hills of trolls and forests of fairies.
+            With 4 luxury bedrooms and 3 modern bathrooms...
+          </p>
+        </div>
+      </div>
+
+      <div class="border border-gray-300 bg-white rounded-lg shadow-sm p-4 flex space-x-4">
+        <div class="w-28 h-28 bg-gray-300 rounded-md flex items-center justify-center">
+          IMG
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-semibold text-lg">Spacious Cottage for Sale</h3>
+          <p class="font-bold text-gray-700">£ 2 300 000</p>
+          <p class="text-sm text-gray-600 mt-2">
+            This lovely property is nested between the hills of trolls and forests of fairies.
+          </p>
+        </div>
+      </div>
+
+      <div class="border border-gray-300 bg-white rounded-lg shadow-sm p-4 flex space-x-4">
+        <div class="w-28 h-28 bg-gray-300 rounded-md flex items-center justify-center">
+          IMG
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-semibold text-lg">Spacious Cottage for Sale</h3>
+          <p class="font-bold text-gray-700">£ 2 300 000</p>
+          <p class="text-sm text-gray-600 mt-2">
+            This lovely property is nested between the hills of trolls and forests of fairies.
+          </p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT SIDE: MAP -->
+    <main class="flex-grow relative">
+      <iframe
+          src="https://www.openstreetmap.org/export/embed.html"
+          class="w-full h-full"
+          style="border:0;">
+      </iframe>
+    </main>
+
+  </div>
+
+</body>
+</html>
