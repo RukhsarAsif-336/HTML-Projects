@@ -1,0 +1,52 @@
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+    margin: 0;
+    padding: 30px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Container for all output */
+#output {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Each result box */
+.box {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect (makes it feel interactive) */
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Labels like "Var", "Let", etc */
+.title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Output text */
+.box div:last-child {
+    color: #444;
+    font-size: 16px;
+}
